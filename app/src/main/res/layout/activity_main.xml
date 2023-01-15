@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#090909"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/kilometer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="56dp"
+        android:text="KILOMETER(KM)"
+        app:layout_constraintBottom_toTopOf="@+id/output"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/centimeter" />
+
+    <Button
+        android:id="@+id/meter"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="9dp"
+        android:text="METER(M)"
+        app:layout_constraintBottom_toTopOf="@+id/kilogram"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal" />
+
+    <Button
+        android:id="@+id/centimeter"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="11dp"
+        android:text="CENTIMETER(CM)"
+        app:layout_constraintBottom_toTopOf="@+id/kilometer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kilogram" />
+
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal"
+        android:textColor="@color/white"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="346dp"
+        android:ems="10"
+        android:hint="Enter your number here"
+        android:inputType="numberDecimal"
+        android:textColorHint="#EFE6E6"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/output"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="105dp"
+        android:hint="OUTPUT:"
+        android:textColor="#F4EEEE"
+        android:textColorHint="#D7CFCF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal" />
+
+    <Button
+        android:id="@+id/kilogram"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="9dp"
+        android:text="KILOGRAM(KG)"
+        app:layout_constraintBottom_toTopOf="@+id/centimeter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meter" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
